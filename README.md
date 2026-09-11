@@ -37,7 +37,7 @@ Instale a aplicação e as dependências de teste:
 .\backend\.venv\Scripts\python.exe -m pip install -e "./backend[test]"
 ```
 
-As dependências estão em `backend/pyproject.toml`: FastAPI e Uvicorn são de execução; pytest e HTTPX pertencem ao extra `test`. Para instalar somente as dependências de execução, omita `[test]`.
+As dependências estão em `backend/pyproject.toml`: FastAPI e Uvicorn são de execução; pytest e HTTPX2 pertencem ao extra `test`. Para instalar somente as dependências de execução, omita `[test]`.
 
 Os comandos usam diretamente o Python do ambiente virtual, sem precisar ativá-lo ou alterar a política de execução do PowerShell. O ambiente `backend/.venv` é local e ignorado pelo Git.
 
