@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "supportflow-api"
+version = "0.1.0"
+description = "API inicial do SupportFlow"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi==0.141.1",
+    "uvicorn==0.52.4",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest==9.1.1",
+    "httpx2==2.12.0",
+]
+
+[tool.setuptools]
+py-modules = ["supportflow_api"]
